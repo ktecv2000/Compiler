@@ -17,6 +17,7 @@
 * Docs & Helps:
   * [Yacc 与 Lex 快速入门-IBM](https://www.ibm.com/developerworks/cn/linux/sdk/lex/index.html)
   * [Flex Gnu Manual](https://www.google.com.tw/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjCsaSq29DSAhUKvbwKHUSiBnIQFggaMAA&url=ftp%3A%2F%2Fftp.gnu.org%2Fold-gnu%2FManuals%2Fflex-2.5.4%2Fhtml_mono%2Fflex.html&usg=AFQjCNG2EUfOrK23D-o29g1DJHfO7gmnDA&sig2=qCNDg6MBNmu3kvi_7lnGJQ)
+  * [Flex Gnu Manual](ftp://ftp.gnu.org/old-gnu/Manuals/flex-2.5.4/html_mono/flex.html)
   * [The Lex & Yacc Page](http://dinosaur.compilertools.net/)
   * [Bison Gnu official Manual](https://www.gnu.org/software/bison/manual/bison.html)
   * [Lex and YACC primer/HOWTO and Examples](https://ds9a.nl/lex-yacc/cvs/lex-yacc-howto.html)
