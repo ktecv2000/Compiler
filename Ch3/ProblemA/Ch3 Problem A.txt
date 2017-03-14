@@ -1,0 +1,8 @@
+Summary:
+	Print and count identified token containing the keyword 'cpy' in the given source code.
+
+Desciption:
+	Write a Lex program that read a c source code from standard input (console input), and print
+all the identified tokens that contains the keyword 'cpy' to the standard output (console output).
+Print each token on one line following the order that you find them in the standard input.
+
