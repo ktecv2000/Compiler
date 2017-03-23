@@ -1,0 +1,19 @@
+S ==> ABC　（１）
+A ==> a　　（２）
+A ==> Cb　　（３）
+A ==> λ　　（４）
+B ==> C　　（５）
+B ==> dA　　（６）
+B ==> λ　　（７）
+C ==> e　　（８）
+C ==> f　　（９）
+
+Nonterminal　　　　　　Terminal
+　　　-　　　　　　a　　b　　d　　e　　f
+S　　　　　　　　　1　　x　　1　　1　　1　
+A　　　　　　　　　2　　x　　4　　34　34　　
+B　　　　　　　　　x　　x　　6　　57　57
+C　　　　　　　　　x　　x　　x　　8　　9
+
+the predict set is mapped into multiple production (ex: B,e corresponds to rule 5, 7)
+it's ambiguous, and so it's not LL(1)
