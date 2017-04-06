@@ -1,4 +1,4 @@
-Please translate id * id + num by using Shift-reduce.
+Please translate id * id + num by using Shift-reduce.<br/>
 Please provide Stack, Input, Action three elements for every step.
 
 E -> T<br/>
