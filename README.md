@@ -1,12 +1,12 @@
 # Compiler
 ## 編譯器
 
-##Message
+## Message
 >Anything you want to tell to everybody...
 
 顆顆 有東西要講就來這~~
 
-##Share
+## Share
 * Downloads:
   * [Flex for Windows](http://gnuwin32.sourceforge.net/packages/flex.htm)
   * [Bison for Windows](http://gnuwin32.sourceforge.net/packages/bison.htm)
@@ -29,18 +29,18 @@
   * [Regex101](https://regex101.com/)
   * [Regexr](http://regexr.com/)
   
-##File Hierarchy
-###ProblemName/
+## File Hierarchy
+### ProblemName/
 >例:problemA/ 存放problemA的題目。
 
-###ProblemName/Ans/
+### ProblemName/Ans/
 >存放已通過此題DOMjudge測試的CODE，檔名記得加上自己的名子。
 
-###ProblemName/TestData/
+### ProblemName/TestData/
 >存放此題在DOMjudjge上的公開測資。
 
-###Temp/
+### Temp/
 >個人CODE暫存。
 
-###Share/
+### Share/
 >其他分享資料\工具。
