@@ -1,9 +1,15 @@
-Please translate id * id + num by using Shift-reduce.<br/>
-Please provide Stack, Input, Action three elements for every step.
-
-E -> T<br/>
-T -> T * F<br/>
-T -> T + F<br/>
-T -> F<br/>
-F -> id<br/>
-F -> num
+| Stack 　　　　| Input　　　　　 | Action　 |
+| ------| ------ | ------ |
+| $ | id*id+num$ | shift |
+| $id | *id+num$ | r5 |
+| $F | *id+num$ | r4 |
+| $T | *id+num$ | shift |
+| $T* | id+num$ | shift |
+| $T*id | +num$ | r5 |
+| $T*F | +num$ | r2 |
+| $T | +num$ | shift |
+| $T+ | num$ | shift |
+| $T+num | $ | r6 |
+| $T+F | $ | r2 |
+| $T | $ | r1 |
+| $E | $ | accept |
