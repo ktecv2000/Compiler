@@ -15,22 +15,20 @@ blank       [ \t]+
 
 %x intag
 %%
-{lefttag}                   {   for (i=0;i<indent;i++)
-                                    strcat(out, "  ");
-                                strcat(out, yytext);
-                                BEGIN(intag);
-                            }
+{lefttag}                   {   BEGIN(intag);   }
 
 <intag>{tagId}              {   if ( strcmp(yytext, tmp) )
                                     indent++;
+                                strcpy(tmp, yytext);
+                                for (i=0;i<indent;i++)
+                                    strcat(out, "  ");
+                                strcat(out, "<");
                                 strcat(out, yytext);
+                                strcat(out, ">\n");
                                 strcpy(tmp, yytext);
                             }
 
-<intag>{righttag}           {   strcat(out, yytext);
-                                strcat(out, "\n");
-                                BEGIN(INITIAL);
-                            }
+<intag>{righttag}           {   BEGIN(INITIAL); }
 
 <intag>[^{tagId}]           {   printf("please don't eat me");exit(1);    }
 
