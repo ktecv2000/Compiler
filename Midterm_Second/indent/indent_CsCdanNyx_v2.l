@@ -11,7 +11,7 @@ char out[100000]={0};
 tagId       [[:alpha:]_]+
 lefttag     "<"
 righttag    ">"
-blank       [ \t]+
+blank       [ \t\n\r]+
 
 %x intag
 %%
@@ -30,10 +30,10 @@ blank       [ \t]+
 
 <intag>{righttag}           {   BEGIN(INITIAL); }
 
-<intag>[^{tagId}]           {   printf("please don't eat me");exit(1);    }
+<intag>.                    {   printf("please don't eat me");exit(1);    }
 
-[^[:space:]]                {   printf("please don't eat me");exit(1);    }
-.|\n
+{blank}
+.                           {   printf("please don't eat me");exit(1);    }
 
 %%
 
