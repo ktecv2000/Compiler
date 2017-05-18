@@ -76,9 +76,10 @@ mole	  	: mole '(' mole ')' NUM
 									for(int i = 0; i < range; i++)
 										$$[i] = $1[i];
 								}
-			|					{
+			| ELEMENT			{
 									for(int i = 0; i < range; i++)
 										$$[i] = 0;
+									$$[ $1[0] ] += $1[1];	
 								}
 			;
 %%
