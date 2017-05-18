@@ -12,7 +12,7 @@
 				int i = 0;
 				while(isalpha(yytext[i]))
 					i++;
-				if(i != strlen(yytext))
+				if(i != strlen(yytext))   // optional element number
 					yylval.ele[1] = atoi(yytext+i);
 				else
 					yylval.ele[1] = 1;
