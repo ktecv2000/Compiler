@@ -9,7 +9,7 @@ int yydebug = 0;
 %}
 %union {
 int ival;
-int list[range];
+int list[26*27];
 int ele[2];
 }
 %left ARROW
@@ -65,6 +65,11 @@ mole	  	: mole '(' mole ')' NUM
 								{
 									for(int i = 0; i < range; i++)
 										$$[i] = $1[i] + $3[i]*$5;
+								}
+			| mole '(' mole ')'  
+								{
+									for(int i = 0; i < range; i++)
+										$$[i] = $1[i] + $3[i];
 								}
 			| mole ELEMENT		{
 									$1[ $2[0] ] += $2[1];					
