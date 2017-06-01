@@ -1,6 +1,0 @@
-(define bar ( fun ()
-					(define def-before-exp 1)
-					(+ 1 1)
-					(define def-after-exp 2) 
-			))
-(bar)

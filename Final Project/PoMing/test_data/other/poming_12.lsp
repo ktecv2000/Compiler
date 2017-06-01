@@ -1,1 +1,0 @@
-(define strange-params-id (fun (^_^) 0 ))
