@@ -31,7 +31,8 @@
   
 * Lisp Interpreter:
   * [Lispy](http://norvig.com/lispy.html/)
-  
+  * [Lisp interpreter in 90 lines of C++](http://howtowriteaprogram.blogspot.tw/2010/11/lisp-interpreter-in-90-lines-of-c.html/)
+  * [Interpreter(Python)](http://www.computingbook.org/Interpreters.pdf/)
 ## File Hierarchy
 ### ProblemName/
 >例:problemA/ 存放problemA的題目。
